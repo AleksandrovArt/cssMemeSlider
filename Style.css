@@ -1,0 +1,52 @@
+body {
+	background-color: rgb(37, 40, 42);
+}
+
+.slider {
+	position: relative;
+	max-width: 800px;
+	overflow: hidden;
+	margin: 0 20px;
+}
+
+.slider-line {
+	display: flex;
+	transition: all 1s;
+}
+
+.slider-dot {
+	position: relative;
+	width: 14px;
+	height: 14px;
+	background-color: rgb(113, 171, 255);
+	border-radius: 50%;
+	border: 2px solid rgb(113, 171, 255);
+}
+
+.slider-wrapper {
+	display: flex;
+	column-gap: 10px;
+	/* потом укажу расположение */
+}
+
+.slider-dot:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -11px;
+	margin-left: -11px;
+	width: 22px;
+	height: 22px;
+}
+
+.slider-dot:hover {
+	background-color: rgb(198, 209, 215);
+	border: 2px solid rgb(198, 209, 215);
+	cursor: pointer;
+}
+
+.active {
+	background-color: rgb(37, 40, 42);
+	border: 2px solid rgb(198, 209, 215);
+}
